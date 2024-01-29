@@ -4,7 +4,7 @@ import 'package:logger/logger.dart';
 //database urls
 //Please add your admin panel url here and make sure you do not add '/' at the end of the url
 // const String baseUrl = "https://eschool.wrteam.me"; //https://eschool.wrteam.me
-const String baseUrl = "https://e-system.labs2030.com"; //https://eschool.wrteam.me
+const String baseUrl = "https://baser-ksa.com";//"https://e-system.labs2030.com";
 
 //please do not change the below 2 values it's for convience of usage in code
 const String databaseUrl = "$baseUrl/api/";

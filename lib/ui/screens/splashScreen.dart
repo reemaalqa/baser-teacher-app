@@ -105,9 +105,11 @@ class _SplashScreenState extends State<SplashScreen> {
                       seconds: 1,
                     ),
                   ),
-                  child: SvgPicture.asset(
-                    UiUtils.getImagePath("appLogo.svg"),
-                  ),
+                  child:Image.asset(UiUtils.getImagePath("baseer_logo.png")),
+
+                  // SvgPicture.asset(
+                  //   UiUtils.getImagePath("appLogo.svg"),
+                  // ),
                 ),
               );
             },
