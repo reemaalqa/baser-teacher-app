@@ -147,6 +147,8 @@ const String attendanceKey = "attendance";
 
 const String forgotPasswordKey = "forgotPassword";
 const String termsAndConditionAgreementKey = "termAndConditionAgreement";
+const String userManualKey = "userManual";
+const String userManual = "userManual";
 const String privacyPolicyKey = "privacyPolicy";
 const String termsAndConditionKey = "termsAndCondition";
 

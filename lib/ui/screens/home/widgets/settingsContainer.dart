@@ -106,6 +106,11 @@ class SettingsContainer extends StatelessWidget {
   Widget _buildSettingsContainer(BuildContext context) {
     return Column(
       children: [
+        Center(
+          child: SizedBox(width:MediaQuery.of(context).size.width * (0.3),
+              // height: MediaQuery.of(context).size.height * (0.5),
+              child: Image.asset(UiUtils.getImagePath("baseer_logo.png"),color:UiUtils.getColorScheme(context).primary,)),
+        ),
         BlocBuilder<AppLocalizationCubit, AppLocalizationState>(
           builder: (context, state) {
             final String languageName = appLanguages
@@ -153,6 +158,14 @@ class SettingsContainer extends StatelessWidget {
                 }
               },
             );
+          },
+          context: context,
+        ),
+        _buildSettingDetailsTile(
+          icon: Icons.bookmark,
+          title: UiUtils.getTranslatedLabel(context, userManual),
+          onTap: () {
+            Navigator.of(context).pushNamed(Routes.userManual);
           },
           context: context,
         ),
@@ -228,6 +241,14 @@ class SettingsContainer extends StatelessWidget {
                 _buildSettingsContainer(context),
                 const SizedBox(
                   height: 25.0,
+                ),
+                Center(
+                  child: SizedBox(width:MediaQuery.of(context).size.width * (0.3),
+                      // height: MediaQuery.of(context).size.height * (0.5),
+                      child: Image.asset(UiUtils.getImagePath("baseer_logo.png"),)),
+                ),
+                const SizedBox(
+                  height: 10.0,
                 ),
                 const LogoutButton(),
                 const SizedBox(

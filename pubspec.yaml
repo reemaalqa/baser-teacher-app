@@ -70,6 +70,7 @@ dependencies:
   any_link_preview: ^3.0.1
   logger: ^2.0.2+1
   flutter_keyboard_visibility: ^6.0.0
+  webview_flutter: ^4.4.4
 
 dependency_overrides:
   intl: any

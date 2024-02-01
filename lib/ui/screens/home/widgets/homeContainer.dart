@@ -111,10 +111,20 @@ class _HomeContainerState extends State<HomeContainer> {
                   height: MediaQuery.of(context).size.width * (0.4),
                 ),
               ),
-
               Align(
-                alignment: Alignment.bottomCenter,
-                child: Container(
+              alignment: Alignment.bottomCenter,
+          child: SingleChildScrollView(
+          child: Column(
+          children: [
+          SizedBox(height:MediaQuery.of(context).size.height * (0.02),),
+          Center(
+          child: SizedBox(width:MediaQuery.of(context).size.width * (0.3),
+          // height: MediaQuery.of(context).size.height * (0.5),
+          child: Image.asset(UiUtils.getImagePath("baseer_logo.png"),color:UiUtils.getColorScheme(context).primary,colorBlendMode: BlendMode.hardLight,)),
+          ),
+
+          SizedBox(height: 5,),
+              Container(
                   margin: EdgeInsetsDirectional.only(
                     start: boxConstraints.maxWidth * (0.05),
                     bottom: boxConstraints.maxHeight * (0.2),
@@ -168,6 +178,7 @@ class _HomeContainerState extends State<HomeContainer> {
                     ],
                   ),
                 ),
+                ]))
               ),
             ],
           );

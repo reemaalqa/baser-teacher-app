@@ -38,6 +38,7 @@ import '../ui/screens/chat/chatMessagesScreen.dart';
 import '../ui/screens/chat/chatUserProfileScreen.dart';
 import '../ui/screens/chat/chatUsersScreen.dart';
 import '../ui/screens/result/resultScreen.dart';
+import '../ui/screens/userManual.dart';
 
 // ignore: avoid_classes_with_only_static_members
 class Routes {
@@ -82,6 +83,7 @@ class Routes {
 
   static const String aboutUs = "/aboutUs";
   static const String privacyPolicy = "/privacyPolicy";
+  static const String userManual = "/userManual";
 
   static const String contactUs = "/contactUs";
 
@@ -131,6 +133,10 @@ class Routes {
       case assignments:
         {
           return AssignmentsScreen.route(routeSettings);
+        }
+      case userManual:
+        {
+          return UserManualScreen.route(routeSettings);
         }
       case assignment:
         {
